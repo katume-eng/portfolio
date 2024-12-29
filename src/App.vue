@@ -11,25 +11,10 @@
       </nav>
     </header>
     <main>
-      <section id="home">
-        <h1>キョウさんのポートフォリオ</h1>
-      </section>
-      <section id="projects">
-        <h2>プロジェクト</h2>
-        <div v-for="project in projects" :key="project.id" class="project">
-          <h3>{{ project.name }}</h3>
-          <p>{{ project.description }}</p>
-          <a :href="project.link" target="_blank">プロジェクトを見る</a>
-        </div>
-      </section>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>ここに自己紹介を書くことができます。</p>
-      </section>
-      <section id="contact">
-        <h2>コンタクト</h2>
-        <p>連絡先情報をここに記載します。</p>
-      </section>
+      <HomeSection />
+      <ProjectsSection />
+      <AboutSection />
+      <ContactSection />
     </main>
     <footer>
       <p>&copy; 2024 キョウさん</p>
@@ -38,14 +23,17 @@
 </template>
 
 <script>
+import HomeSection from './components/HomeSection.vue';
+import ProjectsSection from './components/ProjectsSection.vue';
+import AboutSection from './components/AboutSection.vue';
+import ContactSection from './components/ContactSection.vue';
+
 export default {
-  data() {
-    return {
-      projects: [
-        { id: 1, name: "プロジェクト1", description: "シンプルなプロジェクト例です。", link: "#" },
-        { id: 2, name: "プロジェクト2", description: "もう1つのプロジェクト例です。", link: "#" },
-      ],
-    };
+  components: {
+    HomeSection,
+    ProjectsSection,
+    AboutSection,
+    ContactSection,
   },
 };
 </script>
@@ -84,20 +72,6 @@ nav ul li a:hover {
 }
 main {
   padding: 2rem;
-}
-.project {
-  background: #fff;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-a {
-  color: #007BFF;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 footer {
   text-align: center;
