@@ -7,7 +7,9 @@
     </section>
 </template>
 <script>
-
+    export default {
+        name: "FooterPart",
+    };
 </script>
 <style>
 footer {
