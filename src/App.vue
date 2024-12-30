@@ -16,9 +16,7 @@
       <AboutSection />
       <ContactSection />
     </main>
-    <footer>
-      <p>&copy; 2024 キョウさん</p>
-    </footer>
+    <FooterPart />
   </div>
 </template>
 
@@ -27,6 +25,7 @@ import HomeSection from './components/HomeSection.vue';
 import ProjectsSection from './components/ProjectsSection.vue';
 import AboutSection from './components/AboutSection.vue';
 import ContactSection from './components/ContactSection.vue';
+import FooterPart from './components/FooterPart.vue';
 
 export default {
   components: {
@@ -34,6 +33,7 @@ export default {
     ProjectsSection,
     AboutSection,
     ContactSection,
+    FooterPart,
   },
 };
 </script>
@@ -72,11 +72,5 @@ nav ul li a:hover {
 }
 main {
   padding: 2rem;
-}
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
-  color: #fff;
 }
 </style>
