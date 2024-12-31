@@ -1,7 +1,13 @@
 <template>
   <section id="about">
     <h2>About Me</h2>
-    <p>ここに自己紹介を書くことができます。</p>
+    <h3>
+      katume
+    </h3>
+    <ul>
+      <li>生年月日:2007年8月14日</li>
+      <li>出身地：横浜</li>
+    </ul>
   </section>
 </template>
 

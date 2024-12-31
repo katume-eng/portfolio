@@ -1,6 +1,6 @@
 <template>
     <section id="home">
-      <h1>キョウさんのポートフォリオ</h1>
+      <h1> katume のポートフォリオ</h1>
     </section>
   </template>
   
